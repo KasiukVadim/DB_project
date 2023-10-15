@@ -1,0 +1,10 @@
+SELECT * FROM Game;
+SELECT achievment_desc FROM Achievement WHERE rarity_txt = 'rare';
+SELECT nickname_nm, balance_amt FROM User WHERE balance_amt >= 100;
+UPDATE User SET nickname_nm = 'Vadim Aleksandrovich' WHERE user_id = 1;
+UPDATE Thread SET thread_title = 'NotSuper' WHERE thread_id = 7;
+UPDATE Review SET mark_flg = True WHERE review_txt = 'ne ponravilos';
+DELETE FROM Library WHERE game_id = 1;
+DELETE FROM Message_Repository WHERE sender_id = 10;
+DELETE FROM Thread WHERE thread_title = 'SVO';
+DELETE FROM Gametransaction WHERE sum_amt <= 50;
